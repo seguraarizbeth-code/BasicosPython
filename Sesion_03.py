@@ -52,3 +52,15 @@ while i < 5:
 #miercoles
 #jueves"
 #viernes
+
+
+
+mi_lista_2 = ["Lunes","Martes","Miercoles","Jueves","Vieres"]
+for dia in mi_lista_2:
+        if dia != "Lunes":
+            contador = 0 
+            while contador < 3:
+                print (dia)
+                contador += 1
+   
+
