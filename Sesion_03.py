@@ -54,13 +54,44 @@ while i < 5:
 #viernes
 
 
-
-mi_lista_2 = ["Lunes","Martes","Miercoles","Jueves","Vieres"]
+# ================ Practica 2 ==============
+'''mi_lista_2 = ["Lunes","Martes","Miercoles","Jueves","Vieres"]
 for dia in mi_lista_2:
         if dia != "Lunes":
             contador = 0 
             while contador < 3:
                 print (dia)
                 contador += 1
-   
+                for i in mi_lista_2:
+  '''
 
+
+
+# ================ Practica 3 ===================
+# Dada la lista my_list_2 = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"]
+#imprime cada elemento de la lista 3 veces y cuando sea lunes no la incluyas.
+#Pista: usa los tipos de loops while y for en el mismo programa para lograrlo
+#resultado:
+#Martes
+#Miercoles
+#Jueves
+#Viernes
+#Martes
+#Miercoles
+#Jueves
+#Viernes
+#Martes
+#Miercoles
+#Jueves
+#Viernes
+
+
+
+mi_lista_2 = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"]
+
+contador_general = 0
+while contador_general < 3:
+    for dia in mi_lista_2:
+        if dia != "Lunes":
+            print(dia)
+    contador_general += 1
