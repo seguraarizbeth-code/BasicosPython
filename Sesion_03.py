@@ -87,11 +87,34 @@ for dia in mi_lista_2:
 
 
 
-mi_lista_2 = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"]
+''''mi_lista_2 = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"]
 
 contador_general = 0
 while contador_general < 3:
     for dia in mi_lista_2:
         if dia != "Lunes":
             print(dia)
-    contador_general += 1
+    contador_general += 1'''
+
+
+
+#============Practica 4==========
+#Cree un función en python llamada calculadora, la cual debe tomar los parámetros (num_1, num_2, operacion) y debe ser capaz de realizar toda la lógica de un calculadora simple como: sumar, restar, multiplicar y dividir.
+#Nota: Las entradas serán proporcionadas por el usuario.
+#Pista: Este código es un ejemplo de una suma 
+print("========Mi Super Calculadora==========")
+num_1 = float(input("Escriba el valor del primer numero: "))
+num_2 = float(input("Escriba el valor del segundo numero: "))
+operacion = input("¿Cual operacion deseas hacer? +, -, *, / -> ")
+def calculadora(num_1, num_2, operacion):
+    if operacion == "+":
+        return num_1 + num_2
+    elif operacion == "-":
+        return num_1 - num_2
+    elif operacion == "*":
+        return num_1 * num_2
+    elif operacion == "/":
+        if num_2 != 0:
+            return num_1 / num_2
+resultado = calculadora(num_1, num_2, operacion)
+print("Resultado:", resultado)
